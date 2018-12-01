@@ -181,7 +181,7 @@ def run():
         #  https://datascience.stackexchange.com/questions/5224/how-to-prepare-augment-images-for-neural-network
 
         # Build NN using load_vgg, layers, and optimize function
-        epochs = 10
+        epochs = 50
         batch_size = 3
 
         correct_label = tf.placeholder(tf.int32, [None, None, None, num_classes], name='correct_label')
