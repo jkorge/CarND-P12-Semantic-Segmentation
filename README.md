@@ -8,6 +8,8 @@ Optimization utilizes `tf.nn.softmax_cross_entropy_with_logits_v2` and `tf.train
 
 With loss < 0.1 the results were fair. The model struggles to correctly identify road under poor lighting (eg. under trees where shadows and bright spots intermingle). However, the errors are significantly less frequent that the true positives and this framework performs well at identifying roads in the provided data.
 
+#### Sample outputs:
+
 ![Identifying road around obstacle](images/um_000032.png)
 ![Avoiding labeling multiple non-road objects](images/um_000061.png)
 ![Detects best under clear lighting](images/umm_000091.png)
